@@ -296,6 +296,8 @@ int main() {
 		 rot -= 0.18f;
 	 if (glfwGetKey(window, GLFW_KEY_R) == GLFW_PRESS)
 		 hombro += 0.18f;
+		if (hombro < -45.0f) hombro = -45.0f;
+		if (hombro > 45.0f) hombro = 45.0f;
 	 if (glfwGetKey(window, GLFW_KEY_F) == GLFW_PRESS)
 		 hombro -= 0.18f;
 	 if (glfwGetKey(window, GLFW_KEY_4) == GLFW_PRESS)
