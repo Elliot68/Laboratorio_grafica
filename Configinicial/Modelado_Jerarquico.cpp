@@ -1,5 +1,5 @@
-/*Practica5								Alvarado Lucas Elliot
-Fecha de entrega: 09 de marzo 2025 					3182655117
+/*Tarea7								Alvarado Lucas Elliot
+Fecha de entrega: 10 de marzo 2025 					3182655117
 */
 
 #include<iostream>
@@ -60,7 +60,7 @@ int main() {
 
 	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
-	GLFWwindow *window = glfwCreateWindow(WIDTH, HEIGHT, "Practica 5 Elliot Alvarado Lucas", nullptr, nullptr);
+	GLFWwindow *window = glfwCreateWindow(WIDTH, HEIGHT, "Tarea 7 Elliot Alvarado Lucas", nullptr, nullptr);
 
 	int screenWidth, screenHeight;
 
