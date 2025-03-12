@@ -1,3 +1,6 @@
+/*Tarea#7                                   Alvarado Lucas Elliot
+Fecha de entrega: 11 de marzo 2025          3182655117
+*/
 // Std. Includes
 #include <string>
 
@@ -54,7 +57,7 @@ int main( )
     glfwWindowHint( GLFW_RESIZABLE, GL_FALSE );
     
     // Create a GLFWwindow object that we can use for GLFW's functions
-    GLFWwindow *window = glfwCreateWindow( WIDTH, HEIGHT, "Carga de modelos y camara sintetica", nullptr, nullptr );
+    GLFWwindow *window = glfwCreateWindow( WIDTH, HEIGHT, "Tarea 7 Elliot Alvarado Lucas", nullptr, nullptr );
     
     if ( nullptr == window )
     {
@@ -130,6 +133,7 @@ int main( )
         model = glm::scale(model, glm::vec3(2.0f, 2.0f, 2.0f));
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         dog.Draw(shader);
+
         // Swap the buffers
         glfwSwapBuffers( window );
     }
