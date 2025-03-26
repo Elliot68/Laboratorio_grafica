@@ -41,9 +41,12 @@
     <None Include="Shader\modelLoading.vs">
       <Filter>Archivos de origen</Filter>
     </None>
+    <None Include="Shader\lighting.frag">
+      <Filter>Archivos de origen</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Texturizado.cpp">
+    <ClCompile Include="Iluminacion.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
