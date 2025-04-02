@@ -49,6 +49,7 @@ GLfloat lastFrame = 0.0f;
 float rot = 0.0f;
 bool activanim = false;
 
+
 int main()
 {
     // Init GLFW
@@ -216,12 +217,14 @@ int main()
         GLint viewPosLoc = glGetUniformLocation(lightingShader.Program, "viewPos");
         glUniform3f(lightPosLoc, lightPos.x + movelightPos, lightPos.y + movelightPos, lightPos.z + movelightPos);
         glUniform3f(viewPosLoc, camera.GetPosition().x, camera.GetPosition().y, camera.GetPosition().z);
-
+       
 
         // Set lights properties
         glUniform3f(glGetUniformLocation(lightingShader.Program, "light.ambient"), 0.3f, 0.3f, 0.3f);
         glUniform3f(glGetUniformLocation(lightingShader.Program, "light.diffuse"), 0.2f, 0.7f, 0.8f);
         glUniform3f(glGetUniformLocation(lightingShader.Program, "light.specular"), 0.3f, 0.6f, 0.4f);
+
+       
 
         
 
@@ -264,6 +267,8 @@ int main()
         glBindVertexArray(VAO);
         glDrawArrays(GL_TRIANGLES, 0, 36);
         glBindVertexArray(0);
+
+      
 
         // Swap the buffers
         glfwSwapBuffers(window);
@@ -333,12 +338,14 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
     {
        
         movelightPos += 0.1f;
+        
     }
 
     if (keys[GLFW_KEY_L])
     {
         
         movelightPos -= 0.1f;
+        
     }
 
 
